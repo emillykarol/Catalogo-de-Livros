@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Books</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Catalogo de Livros</h1>
+
+    <form id="book-form">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" required>
+        <label for="autor">Autor</label>
+        <input type="text" id="autor" required>
+        <label for="genero">Gênero</label>
+        <input type="text" id="genero" required>
+        <label for="ano">Ano</label>
+        <input type="text" id="ano" required>
+        <label for="rating">Nota</label>
+        <input type="text" id="rating" min="1" max="5" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <h2>Lista de Livros</h2>
+    <ul id="book-list"></ul>
+
+</body>
+</html>
